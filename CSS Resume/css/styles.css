@@ -63,23 +63,11 @@ a:hover
   padding: 60px 50px;  /*adds 50px to alal sides of the content*/
   overflow: auto; /*self clears over flow keeping image and text within the desired area*/
 }
-.col-narrow
-{
-  width: 30%;
-  float: left;
-  /* border: 1px solid black; */
-}
-.col-wide
-{
-  width: 70%;
-  float: left;
-  padding-left: 20px;
-  /* border: 1px solid black; */
-}
 .uppercase
 {
   text-transform: uppercase;
 }
+/*download button*/
 .button
 {
   text-decoration: none;
@@ -188,7 +176,35 @@ p + h3
 {
   margin-top: 30px;
 }
-
+/*medua Queries
+=====================================================*/
+@media (min-width: 900px) /*anything smaller gets default, larger gets changed*/
+{
+  .col-narrow
+  {
+    width: 30%;
+    float: left;
+    /* border: 1px solid black; */
+  }
+  .col-wide
+  {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+  }
+}
+@media (max-width: 899px)
+{
+  header
+  {
+    text-align: center;
+  }
+  .profile-img
+  {
+    width: 200px;
+  }
+}
 /*web fonts
 (local downloaded files like this)
 use:
